@@ -13,3 +13,13 @@ function slideshow(){
     setTimeout('slideshow()', time);
 }
 slideshow();
+
+//CRIANDO O MENU HAMABURGUER
+const btnMobile = document.querySelector("#btnMob")
+function Menu(){
+    //Declarando a variavel e pegando o id    
+    const navbar=document.querySelector("nav")
+    navbar.classList.toggle("active")
+}
+/*evento que ao clicar vai chamar a função menu */
+    btnMobile.addEventListener("click",Menu)
